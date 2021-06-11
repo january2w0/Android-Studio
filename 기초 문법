@@ -1,0 +1,83 @@
+package com.example.myapplication
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import java.lang.Integer.parseInt
+import java.lang.NumberFormatException
+
+class MainActivity : AppCompatActivity()
+{
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+      /*println("----출력된 결과값----")
+        println(parseInt("100"))
+        println(getStringLength("누구인가? 누가 기침소리를 내었어?"))
+
+        val items = listOf("apple", "banana", "cookie")
+        var index = 0
+
+        for (i in items.indices) {
+            println("인덱스: $i, 값: ${items[i]}")
+        }
+
+        while (index < items.size) {
+            println("item at $index is ${items[index]}")
+            index++
+        }
+
+        println(describe(1))
+        println(describe("Hello"))
+        println(describe(5L))
+        println(describe(4f))
+        println(describe("뚝"))
+
+        val x = 10
+        val y = 9
+
+        if (x in 1..y+1) println("범위 안")
+
+        val list = listOf("a", "b", "c")
+
+        if (-1 !in 0..list.lastIndex) println("-1은 범위 안에 없다")
+        if (list.size !in list.indices) println("리스트 인덱스 넘어갔다")*/
+
+        for (x in 0..10 step 3) {
+            println(x)
+        }
+        println("띄고")
+        for (x in 9 downTo 0 step 3) {
+            println(x)
+        }
+    }
+
+  /*fun parseInt(str: String): Int?
+    {
+        var myNum: Int? = null
+
+        try { myNum = str.toInt() }
+        catch (nfe: NumberFormatException) { return null }
+
+        return myNum
+    }
+
+    fun getStringLength(obj: Any): Int?
+    {
+        if (obj is String) return obj.length
+        return null
+    }
+
+    fun describe(obj: Any): String =
+        when(obj) {
+            1          -> "One"
+            "Hello"    -> "Greeting"
+            is Long    -> "Long"
+            !is String -> "Not a String"
+            else       -> "Unknown"
+        }
+
+    */
+
+}
